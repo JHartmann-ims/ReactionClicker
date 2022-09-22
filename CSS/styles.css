@@ -1,0 +1,39 @@
+
+body {
+    background-color: blanchedalmond;
+}
+
+.game-container {
+    width:  500px;
+    height: 500px;
+    border: 2px solid wheat;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.gameText {
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    
+}
+
+#startScreen {
+    width: 100%;
+    height: 100%;
+}
+
+#waitForGreen {
+    width: 100%;
+    height: 100%;
+}
+
+#turnGreen {
+    width: 100%;
+    height: 100%;
+}
+
+#oneGreenClick {
+    width: 100%;
+    height: 100%;
+}
