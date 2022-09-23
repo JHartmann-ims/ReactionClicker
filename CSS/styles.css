@@ -1,53 +1,69 @@
-
 body {
-    background-color: blanchedalmond;
+  background-color: blanchedalmond;
 }
 
 .game-container {
-    width:  500px;
-    height: 500px;
-    border: 2px solid wheat;
-    background-color: white;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 1px 1px qpc;
+  width: 500px;
+  height: 500px;
+  border: 2px solid wheat;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 .gameText {
-    color: white;
-    text-align: center;
-    padding-top: 200px;
-    
+  color: white;
+  text-align: center;
 }
 
 .gameUnderText {
-    color: white;
-    text-align: center;
-    
-
+  color: white;
+  text-align: center;
 }
 
 #startScreen {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #waitForGreen {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #turnGreen {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#oneGreenClick {
-    width: 100%;
-    height: 100%;
+#onGreenClick {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #clickedTooEarly {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+    width: 200px;
+    height: 1px;
+    border: 1px solid #647be1;
+    margin-bottom: 10px;
 }
