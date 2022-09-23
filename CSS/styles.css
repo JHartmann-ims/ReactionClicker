@@ -9,6 +9,8 @@ body {
     border: 2px solid wheat;
     background-color: white;
     margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px qpc;
 }
 
 .gameText {
@@ -16,6 +18,11 @@ body {
     text-align: center;
     padding-top: 200px;
     
+}
+
+.gameUnderText {
+    color: white;
+    text-align: center;
 }
 
 #startScreen {
@@ -34,6 +41,11 @@ body {
 }
 
 #oneGreenClick {
+    width: 100%;
+    height: 100%;
+}
+
+#clickedTooEarly {
     width: 100%;
     height: 100%;
 }
