@@ -9,6 +9,7 @@ var count = 0;
 startScreen();
 
 function startScreen() {
+  $(".game-container").empty();
   $(".game-container").css("background-color", "#8093E8");
   $(".game-container").append(
     "<div id='startScreen'><div><img src='../Images/thunder.png' alt='' class='images'><h1 class='gameText'>reaction time test</h1><h1 class='gameUnderText h5'>When it turns red, click as quickly as you can.</h1><h1 class='gameUnderText h5'>click anywhere to begin</h1></div></div>"
@@ -112,6 +113,6 @@ function resultScreen() {
     total = 0;
     count = 0;
 
-    waitForGreen();
+    startScreen();
   });
 }

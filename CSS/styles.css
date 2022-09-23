@@ -29,6 +29,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  animation: pulse 2s ease infinite;
 }
 
 #startScreen {
@@ -84,4 +85,17 @@ body {
     height: 1px;
     border: 1px solid #647be1;
     margin-bottom: 10px;
+}
+
+/* Creating th heartbeat effect */
+@keyframes pulse {
+  0% { 
+      transform: scale(1); 
+}
+  50% {
+      transform: scale(1.2); 
+}
+100% { 
+      transform: scale(1); 
+}
 }
