@@ -11,7 +11,7 @@ startScreen();
 function startScreen() {
   $(".game-container").css("background-color", "#8093E8");
   $(".game-container").append(
-    "<div id='startScreen'><div><h1 class='gameText'>click to start</h1></div></div>"
+    "<div id='startScreen'><div><img src='../Images/thunder.png' alt='' class='images'><h1 class='gameText'>reaction time test</h1><h1 class='gameUnderText h5'>When it turns red, click as quickly as you can.</h1><h1 class='gameUnderText h5'>click anywhere to begin</h1></div></div>"
   );
 
   $("#startScreen").mousedown(function () {
@@ -20,13 +20,16 @@ function startScreen() {
 }
 
 function waitForGreen() {
+  var rndTime = Math.floor((Math.random() * 5000) + 1500);
+  //console.log(rndTime)
+
   $(".game-container").empty();
   $(".game-container").css("background-color", "#F44B49");
   $(".game-container").append(
     "<div id='waitForGreen'><div><h1 class='gameText'>wait for green...</h1></div></div>"
   );
 
-  cancelTurnGreen = setTimeout(turnGreen, 4500);
+  cancelTurnGreen = setTimeout(turnGreen, rndTime);
 
   $("#waitForGreen").mousedown(function () {
     clearTimeout(cancelTurnGreen);
@@ -52,7 +55,7 @@ function turnGreen() {
   $(".game-container").empty();
   $(".game-container").css("background-color", "#78F59A");
   $(".game-container").append(
-    "<div id='turnGreen'><div><h1 class='gameText'>CLICK</h1></div></div>"
+    "<div id='turnGreen'><div><h1 class='gameText'>click !</h1></div></div>"
   );
 
   countDownTimer = new Date();
@@ -98,8 +101,17 @@ function resultScreen() {
   $(".game-container").empty();
   $(".game-container").css("background-color", "#8093E8");
   $(".game-container").append(
-    "<div id='turnGreen'><div><h1 class='gameUnderText h5'>your average was</h1><h1 class='gameText'>" +
+    "<div id='resultScreen'><div><h1 class='gameUnderText h5'>your average was</h1><h1 class='gameText'>" +
       total / count +
-      " ms</h1><div class='line'></div><h1 class='gameUnderText h5'>click to retry again.</h1></div></div>"
+      " ms</h1><div class='line'></div><h1 class='gameUnderText h5'>click to try again.</h1></div></div>"
   );
+
+  $("#resultScreen").mousedown(function () {
+    amountOfTries = 0;
+    results = [];
+    total = 0;
+    count = 0;
+
+    waitForGreen();
+  });
 }
